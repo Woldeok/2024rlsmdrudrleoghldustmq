@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <link rel="stylesheet" href="/20240311_190739_770.css">
+    <link rel="stylesheet" href="/gallery.css">
+  </head>
+</head>
+<body>
+    
+
+<!-- 헤더 -->
+<div class="nav2">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="nav nav-underline">
+     <img class="navbar_img" src="/img/logo-1.png" alt="로그">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/i.html">information</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">statistics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">reservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">goods</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">로그인</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="#">회원가입</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+
+
+  <div class="slider">
+    <div class="slide">
+      (텍스트1)
+No limits amazing skills baseball park!
+
+    </div>
+    <div class="slide">
+      (텍스트2)
+스킬스 베이스볼 파크에 오신것을 환영합니다.
+
+    </div>
+    <div class="slide">
+      (텍스트3)
+New Champion, New Challenge, Skills Baseball Park
+
+    </div>
+    <div class="slide">
+      (텍스트4)
+스킬스베이스볼 파크를 응원해주시는 모든 분께 감사드립니다.
+ </div>
+  </div>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<div class="c">
+    
+ <img src="/img/48.jpg" alt="">
+ <a href="/i.html"><button>information</button></a>
+
+</div>
+<!--  game schedule 영역 -->
+<div class="hy">
+  
+<div class="header">
+  <h1>2024년 4월</h1>
+</div>
+<table>
+  <caption>2024년 4월</caption>
+  <thead>
+    <tr>
+      <th>월</th>
+      <th>화</th>
+      <th>수</th>
+      <th>목</th>
+      <th>금</th>
+      <th>토</th>
+      <th>일</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="highlight">1</td>
+      <td class="highlight">2</td>
+      <td class="highlight">3</td>
+      <td class="highlight">4</td>
+      <td class="highlight">5</td>
+      <td class="highlight">6</td>
+      <td class="highlight">7</td>
+    </tr>
+    <tr>
+      <td class="highlight">8</td>
+      <td class="highlight">9</td>
+      <td class="highlight">10</td>
+      <td class="highlight">11</td>
+      <td class="highlight">12</td>
+      <td class="highlight">13</td>
+      <td class="highlight">14</td>
+    </tr>
+    <tr>
+      <td class="highlight">15</td>
+      <td class="highlight">16</td>
+      <td class="highlight">17</td>
+      <td class="highlight">18</td>
+      <td class="highlight">19</td>
+      <!-- <td class="highlight modal-trigger">20
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="/img/무제-2.jpg" alt="">
+          <p>아직 게임이 없습니다..</p>
+        </div> -->
+        <!-- 20일에 모달 트리거를 추가합니다. -->
+<!-- 닫기 버튼을 제거합니다. -->
+<td class="highlight">
+  <a href="#myModal" style="display: block; height: 100%;">20</a>
+  <div id="myModal" class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <img src="/img/무제-2.jpg" alt="">
+    <p>아직 게임이 없습니다..</p>
+  </div>
+      </td>
+      <td class="highlight">21</td>
+    </tr>
+    <tr>
+      <td class="highlight">22</td>
+      <td class="highlight">23</td>
+      <td class="highlight">24</td>
+      <td class="highlight">25</td>
+      <td class="highlight">26</td>
+      <td class="highlight">27</td>
+      <td class="highlight">28</td>
+    </tr>
+    <tr>
+      <td class="highlight">29</td>
+      <td class="highlight">30</td>
+      <td class="empty"></td>
+      <td class="empty"></td>
+      <td class="empty"></td>
+      <td class="empty"></td>
+      <td class="empty"></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<!-- ranking 영역 -->
+
+
+
+<div id="ranking">
+  <h2>ranking 영역</h2>
+  <select id="leagueSelect">
+    <!-- 리그 선택 옵션 -->
+    <option value="나이트리그">나이트리그</option>
+    <option value="주말리그">주말리그</option>
+    <option value="새벽리그">새벽리그</option>
+  </select>
+  
+  <div id="tabs">
+    <!-- 투수, 타자 탭 -->
+    <button class="tab" onclick="openTab(event, 'pitchers')">투수</button>
+    <button class="tab" onclick="openTab(event, 'batters')">타자</button>
+  </div>
+  
+  <!-- 리그별 투수 순위 -->
+  <div id="pitchers" class="tabcontent">
+    <h3>리그별 투수 순위</h3>
+    <p>
+      나이트리그<br>
+      1. 나일투, 2. 나이투, 3. 나삼투, 4. 나사투, 5. 나오투, 6. 나육투, 7. 나칠투
+    </p>
+    <p>
+      주말리그<br>
+      1. 주일투, 2. 주이투, 3. 주삼투, 4. 주사투, 5. 주오투, 6. 주육투, 7. 주칠투
+    </p>
+    <p>
+      새벽리그<br>
+      1. 새일투, 2. 새이투, 3. 새삼투, 4. 새사투, 5. 새오투, 6. 새육투, 7. 새칠투
+    </p>
+  </div>
+  
+  <!-- 리그별 타자 순위 -->
+  <div id="batters" class="tabcontent">
+    <h3>리그별 타자 순위</h3>
+    <p>
+      나이트리그<br>
+      1. 나일타, 2. 나이타, 3. 나삼타, 4. 나사타, 5. 나오타, 6. 나육타, 7. 나칠타
+    </p>
+    <p>
+      주말리그<br>
+      1. 주일타, 2. 주이타, 3. 주삼타, 4. 주사타, 5. 주오타, 6. 주육타, 7. 주칠타
+    </p>
+    <p>
+      새벽리그<br>
+      1. 새일타, 2. 새이타, 3. 새삼타, 4. 새사타, 5. 새오타, 6. 새육타, 7. 새칠타
+    </p>
+  </div>
+  
+<!-- 주요 부문 Top5 -->
+<div id="top5">
+  <h3>주요 부문 Top5</h3>
+  <!-- 아코디언 형태로 각 요소 표시 -->
+  <button class="accordion">타율</button>
+  <div class="panel">
+    <p>(1위) 일타율, (2위) 이타율, (3위) 삼타율, (4위) 사타율, (5위) 오타율</p>
+  </div>
+  <button class="accordion">홈런</button>
+  <div class="panel">
+    <p>(1위) 일홈런, (2위) 이홈런, (3위) 삼홈런, (4위) 사홈런, (5위) 오홈런</p>
+  </div>
+  <button class="accordion">다승</button>
+  <div class="panel">
+    <p>(1위) 일다승, (2위) 이다승, (3위) 삼다승, (4위) 사다승, (5위) 오다승</p>
+  </div>
+  <button class="accordion">평균자책</button>
+  <div class="panel">
+    <p>(1위) 일평자, (2위) 이평자, (3위) 삼평자, (4위) 사평자, (5위) 오평자</p>
+  </div>
+  <button class="accordion">탈삼진</button>
+  <div class="panel">
+    <p>(1위) 일삼진, (2위) 이삼진, (3위) 삼삼진, (4위) 사삼진, (5위) 오삼진</p>
+  </div>
+  <button class="accordion">세이브</button>
+  <div class="panel">
+    <p>(1위) 일세이, (2위) 이세이, (3위) 삼세이, (4위) 사세이, (5위) 오세이</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  gallery 영역 -->
+<div class="gallery-container">
+  <input type="radio" id="prev" name="nav" hidden>
+  <input type="radio" id="next" name="nav" hidden>
+
+  <div class="gallery-slides">
+    <div class="gallery-slide"><img src="/img/gallery_1.jpg" alt="Image 1"></div>
+    <div class="gallery-slide"><img src="/img/gallery_2.jpg" alt="Image 2"></div>
+    <div class="gallery-slide"><img src="/img/gallery_3.jpg" alt="Image 3"></div>
+    <div class="gallery-slide"><img src="/img/gallery_4.jpg" alt="Image 4"></div>
+    <div class="gallery-slide"><img src="/img/gallery_5.jpg" alt="Image 5"></div>
+    <div class="gallery-slide"><img src="/img/gallery_6.jpg" alt="Image 6"></div>
+  </div>
+
+  <div class="gallery-btn-container">
+    <label for="prev" class="gallery-btn prev" disabled>Previous</label>
+    <label for="next" class="gallery-btn next">Next</label>
+  </div>
+</div>
+<!-- <footer>
+  
+    [Copyright]
+  Copyrightⓒ Skills baseball park. All rights reserved.
+  Call: 142-3677
+  Email: help@skillsbaseballpark.com
+  Address: (12345) 서울특별서 중구 중북로 71
+  </footer> -->
+ 
+  <!-- 1320 -->
+  
+
+
+
+
+</body>
+</html>

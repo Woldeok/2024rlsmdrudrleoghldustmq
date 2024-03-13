@@ -1,0 +1,376 @@
+.navbar_img{
+    height: 100px;
+    width: 100px;
+     border-radius:0px; 
+    margin: 5px;
+    border-radius: 80px;
+overflow: hidden;
+object-fit: cover;
+}
+.nav-item a:hover {
+    background-color: #a8a8a8;
+}
+.nav2{
+  margin-left: 200px;
+}
+
+
+
+
+
+
+ .slider {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    width: 1320px;
+    height: 1080px;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 242, 255);
+    display: flex;
+    justify-content: center;
+    animation: slider 8s infinite linear;
+  }
+  
+  .slide:nth-child(1) {
+    background-image: url(/img/visual_1.jpg);
+    animation-delay: 0s;
+  }
+  .slide:nth-child(2) {
+    background-image: url(/img/visual_2.jpg);
+    animation-delay: -2s;
+  }
+  .slide:nth-child(3) {
+    background-image: url(/img/visual_3.jpg);
+    animation-delay: -4s;
+  }
+  .slide:nth-child(4) {
+    background-image: url(/img/visual_4.jpg);
+    animation-delay: -6s;
+  }
+  
+  @keyframes slider {
+    0% {
+      transform: translateX(0);
+    }
+  
+    26% {
+      transform: translateX(0);
+    }
+    33% {
+      transform: translateX(-100%);
+      animation-timing-function: step-end;
+    }
+    93% {
+      transform: translateX(100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+.c{
+  margin-top: 10px;
+  width: 1320px;
+  height: 1000px;
+}
+.c button{
+  height: 100px;
+  width: 100px;
+}
+.c img{
+  height: 1000px;
+  width: 1320px;
+  margin-left: 200px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.navbar {
+  background-color: #f8f9fa;
+}
+.navbar-nav .nav-item .nav-link {
+  color: #007bff;
+  transition: background-color 0.3s ease;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+.nav2{
+  width: 1320px;
+  display: flex;
+  justify-content: center;
+}
+
+.holiday,
+.holiday_g {
+  color: red;
+}
+.number-tooltip {
+  position: absolute;
+  background-color: yellow;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.c button {
+  margin-bottom: 20px;
+}
+.header{
+  margin-top: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .header {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    h1 {
+      margin: 0;
+      color: #333;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    td {
+      cursor: pointer;
+    }
+
+    .highlight {
+      transition: background-color 0.3s;
+    }
+
+    .highlight:hover {
+      background-color: #ffff00; /* 노란색 */
+    }
+
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .hy{
+      height: 1320px;
+      width: 1000px;
+      margin-left: 200px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    
+    .modal-content {
+      display: none; 
+      position: fixed; 
+      z-index: 1; 
+      padding-top: 100px; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.4); 
+    }
+    
+    .modal-content:target {
+      display: block;
+    }
+    
+    .modal-content-inner {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+    
+    .close {
+      color: #aaaaaa;
+      position: absolute; /* 버튼의 위치를 절대 위치로 설정합니다. */
+      bottom: 20%; /* 버튼을 가운데 아래로 이동시킵니다. */
+      left: 50%; /* 버튼을 가운데로 이동시킵니다. */
+      transform: translate(-50%, 50%); /* 버튼을 정확히 가운데 아래로 이동시킵니다. */
+      font-size: 36px; /* 버튼의 크기를 조절합니다. */
+      font-weight: bold;
+      background-color: #f8f8f8; /* 버튼의 배경색을 변경합니다. */
+      border-radius: 50%; /* 버튼의 테두리를 둥글게 만듭니다. */
+      padding: 10px; /* 버튼 내부의 여백을 추가합니다. */
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+      background-color: #e8e8e8; /* 마우스를 올렸을 때의 배경색을 변경합니다. */
+    }
+
+
+
+/* ranking 영역 스타일 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#ranking {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+#ranking h2, #ranking h3 {
+  color: #333;
+}
+
+#leagueSelect {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#tabs {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+#tabs button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+#tabs button:hover {
+  background-color: #ddd;
+}
+
+#tabs button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: none;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion:active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.panel p {
+  padding: 10px 0;
+  margin: 0;
+}
